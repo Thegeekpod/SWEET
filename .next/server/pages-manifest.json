@@ -1,0 +1,16 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/Componnt/ScriptComponent": "pages/Componnt/ScriptComponent.html",
+  "/about-us": "pages/about-us.html",
+  "/healthchecker": "pages/healthchecker.html",
+  "/": "pages/index.html",
+  "/project": "pages/project.html",
+  "/service": "pages/service.html",
+  "/contact-us": "pages/contact-us.html",
+  "/terms-and-conditions": "pages/terms-and-conditions.html",
+  "/refund-policy": "pages/refund-policy.html",
+  "/privacy-policy": "pages/privacy-policy.html",
+  "/404": "pages/404.html"
+}
