@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 const Header = () => {
   
   return (
@@ -14,7 +15,7 @@ const Header = () => {
           {/* Logo Box */}
           <div className="logo">
             <Link href="/">
-              <img src="/images/logo-2.png" className='logoimg' alt="" title="" />
+              <img  src="/images/logo-2.png" className='logoimg' alt="" title="" />
             </Link>
           </div>
           <div className="nav-outer d-flex justify-content-between align-items-center flex-wrap">
@@ -77,13 +78,13 @@ const Header = () => {
               
               {/* Button Box */}
               <div className="button-box style-two ">
-                <Link className="btn-style-one theme-btn btn-item x" href="https://wa.me/+918918789119" target='_blank'>
+                <a className="btn-style-one theme-btn btn-item x" href="https://wa.me/+918918789119" target='_blank'>
                   <div className="btn-wrap">
-                    <span className="text-one"><img className="whatsapp"src='/images/giphy.gif'/>Whats App</span>
-                    <span className="text-two"><img className="whatsapp"src='/images/giphy.gif'/>Whats App</span>
+                    <span className="text-one"><img  className="whatsapp"src='/images/giphy.gif'/>Whats App</span>
+                    <span className="text-two"><img  className="whatsapp"src='/images/giphy.gif'/>Whats App</span>
 
                   </div>
-                </Link>
+                </a>
               </div>
               {/* Mobile Navigation Toggler */}
               <div className="mobile-nav-toggler">
@@ -101,7 +102,7 @@ const Header = () => {
           {/* Logo */}
           <div className="logo">
             <Link href="/" title="">
-              <img src="/images/logo-2.png" className='logoimg' alt="sweetdeveloper"/>
+              <img  src="/images/logo-2.png" className='logoimg' alt="sweetdeveloper"/>
             </Link>
           </div>
           {/* Right Col */}
@@ -139,8 +140,8 @@ const Header = () => {
               <div className="button-box style-two ">
                 <Link className="btn-style-one theme-btn btn-item x" href="wa.me/+918918789119">
                   <div className="btn-wrap">
-                    <span className="text-one"><img className="whatsapp"src='/images/giphy.gif'/>Whats App</span>
-                    <span className="text-two"><img className="whatsapp"src='/images/giphy.gif'/>Whats App</span>
+                    <span className="text-one"><img  className="whatsapp"src='/images/giphy.gif'/>Whats App</span>
+                    <span className="text-two"><img  className="whatsapp"src='/images/giphy.gif'/>Whats App</span>
 
                   </div>
                 </Link>
@@ -164,7 +165,7 @@ const Header = () => {
       <nav className="menu-box">
         <div className="nav-logo">
           <Link href="/">
-            <img src="/images/logo.webp" alt="" title="" />
+            <img  src="/images/logo-2.png" alt="" title="" />
           </Link>
         </div>
         {/* Search */}

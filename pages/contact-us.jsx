@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import Link from 'next/link';
+import Head from 'next/head';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -63,9 +64,28 @@ const Contact = () => {
   return (
   
   <div>
-  
-    {/* End Page Title */}
-    {/* Contact One */}
+      <Head>
+        <title>Contact Website Developer | Hire A Website Developer</title>
+        <meta
+          name="description"
+          content="Get in touch with Sweet Developers for top-notch IT solutions. Contact us for inquiries related to web development, graphic design, SEO, software and app development, and UI/UX design."
+        />
+        <meta
+          name="keywords"
+          content="Contact Us, IT solutions, web development, graphic design, SEO, software development, app development, UI/UX design"
+        />
+        <meta name="author" content="Sweet Developers" />
+        
+        <link rel="canonical" href="https://sweetdevelopers.com/contact-us" />
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+        <meta name="format-detection" content="telephone=no" />
+        {/* Other SEO-related meta tags */}
+        <meta property="og:title" content="Contact Website Developer | Hire A Website Developer " />
+        <meta property="og:description" content="Get in touch with Sweet Developers for top-notch IT solutions. Contact us for inquiries related to web development, graphic design, SEO, software and app development, and UI/UX design." />
+        <meta property="og:url" content="https://sweetdevelopers.com/contact-us" />
+        <meta property="og:type" content="website" />
+      </Head>
+
     <section
       className="contact-one"
       style={{ backgroundImage: "url(/images/background/map-1.png)" }}
@@ -99,7 +119,7 @@ const Contact = () => {
                     <img src="/images/icons/contact-1.png" alt="" />
                   </span>
                   <strong>Office address</strong>
-                  Madhyamgram Municipality Ward 19, Bidhanpally, Madhyamgram, West Bengal 700129
+                  Palashdiha, Industrial Area, Durgapur, West Bengal 713208
                 </div>
               </div>
               {/* Contact Block */}
@@ -109,10 +129,10 @@ const Contact = () => {
                     <img src="/images/icons/contact-2.png" alt="" />
                   </span>
                   <strong>Telephone number</strong>
-                  <Link href="tel:+9193829 50050" style={{color:'#666666'}} ><span className="icon fa fa-phone" /> (+91) 93829 50050</Link><br/>
+                 Sales: <Link href="tel:+917029738023" style={{color:'#666666'}} ><span className="icon fa fa-phone" /> (+91) 70297 38023</Link><br/>
 
-                  <Link href="tel:+918918789119" style={{color:'#666666'}}> <span className="icon fa fa-phone" /> (+91) 8918789119</Link>
-
+                  Support: <Link href="tel:+918918789119" style={{color:'#666666'}}> <span className="icon fa fa-phone" /> (+91) 89187 89119</Link><br/>
+                  Support: <Link href="tel:+9193829 50050" style={{color:'#666666'}} ><span className="icon fa fa-phone" /> (+91) 93829 50050</Link><br/>
                 </div>
               </div>
               {/* Contact Block */}
@@ -122,9 +142,9 @@ const Contact = () => {
                     <img src="/images/icons/contact-3.png" alt="" />
                   </span>
                   <strong>Mail address</strong>
-                  <Link href="mailto:career@sweetdevelopers.com" style={{color:'#666666'}}>  <span className="icon fa fa-envelope" /> career@sweetdevelopers.com</Link><br/>
+                  <Link href="mailto:sales@sweetdevelopers.com" style={{color:'#666666'}}>  <span className="icon fa fa-envelope" /> sales@sweetdevelopers.com</Link><br/>
+                  <Link href="mailto:support@sweetdevelopers.com" style={{color:'#666666'}}>  <span className="icon fa fa-envelope" /> support@sweetdevelopers.com</Link>
                   <Link href="mailto:career@sweetdevelopers.com" style={{color:'#666666'}}>  <span className="icon fa fa-envelope" /> career@sweetdevelopers.com</Link>
-
                 </div>
               </div>
             </div>
@@ -374,15 +394,20 @@ const Contact = () => {
     </section>
     {/* End Contact One */}
     {/* Map One */}
-    {/* <section className="map-one">
+    <section className="map-one">
       <div className="map-outer">
-        <iframe
-          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=digital marketing wiz&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-          allowFullScreen=""
-        />
+      <iframe
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14631.981695504912!2d87.291475!3d23.532667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f7730036a0bff9%3A0x9d3ec6abae9ab32a!2sSweet%20Developers!5e0!3m2!1sen!2sin!4v1707598217932!5m2!1sen!2sin"
+  width={800}
+  height={600}
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
 
       </div>
-    </section> */}
+    </section>
   
    
   </div>

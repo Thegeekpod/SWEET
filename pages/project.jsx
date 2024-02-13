@@ -1,3 +1,6 @@
+import Script from 'next/Script';
+import Head from 'next/head';
+import Image from 'next/image';
 import React, { useEffect } from 'react'
 
 const project = () => {
@@ -54,8 +57,29 @@ const project = () => {
      
   return (
     <div>
-
-   
+   <Head>
+        <title>Quality Website Design at Low Price | Sweet Developer </title>
+        <meta
+          name="description"
+          content="Discover the details of our latest project at Sweet Developers - showcasing our expertise in web development, graphic design, SEO, software and app development, and UI/UX design."
+        />
+        <meta
+          name="keywords"
+          content="Project, web development, graphic design, SEO, software development, app development, UI/UX design"
+        />
+        <meta name="author" content="Sweet Developers" />
+        
+        
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
+        <link rel="canonical" href="https://sweetdevelopers.com/project" />
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta property="og:title" content="Quality Website Design at Low Price | Sweet Developer" />
+        <meta property="og:description" content="Discover the details of our latest project at Sweet Developers - showcasing our expertise in web development, graphic design, SEO, software and app development, and UI/UX design." />
+        <meta property="og:url" content="https://sweetdevelopers.com/project" />
+        <meta property="og:type" content="website" />
+        {/* Other SEO-related meta tags */}
+      </Head>
     {/* End Page Title */}
     {/* Projects One */}
     <section className="projects-one">
@@ -85,38 +109,188 @@ const project = () => {
               <li className="active filter" data-role="button" data-filter="all">
                 All
               </li>
-              <li className="filter" data-role="button" data-filter=".web">
-                Web Technology
-              </li>
-              <li className="filter" data-role="button" data-filter=".cloud">
-                Cloud Database
-              </li>
               <li className="filter" data-role="button" data-filter=".design">
                 UI/UX Design
               </li>
+              <li className="filter" data-role="button" data-filter=".web">
+                Web Development
+              </li>
+              <li className="filter" data-role="button" data-filter=".seo">
+                Seo & Digital Marketing
+              </li>
+             
             </ul>
           </div>
           <div className="filter-list row clearfix">
-            {/* Project One */}
-            <div className="project_one mix all design col-lg-3 col-md-6 col-sm-12">
+            
+           
+          <div className="project_one mix  web design  col-lg-3 col-md-6 col-sm-12">
               <div className="project_one-inner">
                 <div className="project_one-image">
-                  <img src="/images/gallery/project-1.jpg" alt="" />
+                  <img src="/images/projects/induscribe.webp" alt="" />
                   <div className="project_one-content">
                     <h5 className="project-one_title">
-                      <a href="project-detail.html">Award-Winning Photo</a>
+                      <a href="https://induscribe.com/">Induscribe</a>
                     </h5>
-                    <div className="project-one_designation">Photo Editing</div>
+                    <div className="project-one_designation">Web Development</div>
                   </div>
                   <div className="project_one-overlay">
                     <div className="project-one_overlay-content">
                       <div className="project_one-text">
-                        lead the team of passionate developers, designers and the
-                        strategists with a lot of thought and analysis come true!
+                      Crafted a digital narrative for a company's journey using WordPress magic—where pixels dance, ideas thrive, and brand stories unfold uniquely.
                       </div>
                       <a
                         className="project_one-plus fa-solid fa-plus fa-fw"
-                        href="project-detail.html"
+                        href="https://induscribe.com/" target='blank'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="project_one mix  web design col-lg-3 col-md-6 col-sm-12">
+              <div className="project_one-inner">
+                <div className="project_one-image">
+                  <img src="/images/projects/delipat.webp" alt="" />
+                  <div className="project_one-content">
+                    <h5 className="project-one_title">
+                      <a href="https://delipat.com/">Delipat</a>
+                    </h5>
+                    <div className="project-one_designation">Web Development</div>
+                  </div>
+                  <div className="project_one-overlay">
+                    <div className="project-one_overlay-content">
+                      <div className="project_one-text">
+                      Elevated a company's digital presence with a dynamic Next.js portfolio project—showcasing innovation, design finesse, and user-centric experiences.
+                      </div>
+                      <a
+                        className="project_one-plus fa-solid fa-plus fa-fw"
+                        href="https://delipat.com/" target='blank'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Project all */}
+            <div className="project_one mix  web   col-lg-3 col-md-6 col-sm-12">
+              <div className="project_one-inner">
+                <div className="project_one-image">
+                  <img src="/images/projects/digitalmarketingwiz.webp" alt="" />
+                  <div className="project_one-content">
+                    <h5 className="project-one_title">
+                      <a href="https://digitalmarketingwiz.in">Digitalmarketingwiz</a>
+                    </h5>
+                    <div className="project-one_designation">Web Development</div>
+                  </div>
+                  <div className="project_one-overlay">
+                    <div className="project-one_overlay-content">
+                      <div className="project_one-text">
+                      Empower your brand's online presence with DigitalMarketingWiz.in. Our WordPress-powered website, crafted by SweetDevelopers, mirrors the dynamic strategies and creativity we bring to digital marketing.
+                      </div>
+                      <a
+                        className="project_one-plus fa-solid fa-plus fa-fw"
+                        href="https://digitalmarketingwiz.in" target='blank'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Project cloud */}
+            <div className="project_one mix  web col-lg-3 col-md-6 col-sm-12">
+              <div className="project_one-inner">
+                <div className="project_one-image">
+                  <img src="/images/projects/oyemonkey.webp" alt="" />
+                  <div className="project_one-content">
+                    <h5 className="project-one_title">
+                      <a href="https://oyemonkey.com/">Oyemonkey</a>
+                    </h5>
+                    <div className="project-one_designation">Web Development</div>
+                  </div>
+                  <div className="project_one-overlay">
+                    <div className="project-one_overlay-content">
+                      <div className="project_one-text">
+                      Embark on a shopping adventure at OyeMonkey.com, where SweetDevelopers has woven a digital marketplace—your gateway to unique finds and delightful treasures.
+                      </div>
+                      <a
+                        className="project_one-plus fa-solid fa-plus fa-fw"
+                        href="https://oyemonkey.com/" target='blank'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Project web */}
+            <div className="project_one mix design web col-lg-3 col-md-6 col-sm-12">
+              <div className="project_one-inner">
+                <div className="project_one-image">
+                  <img src="/images/projects/dynopat.webp" alt="" />
+                  <div className="project_one-content">
+                    <h5 className="project-one_title">
+                      <a href="https://dynopat.com/">Dynopat</a>
+                    </h5>
+                    <div className="project-one_designation">Web Development</div>
+                  </div>
+                  <div className="project_one-overlay">
+                    <div className="project-one_overlay-content">
+                      <div className="project_one-text">
+                      Embark on a knowledge expedition at DynoPat, a Next.js-powered learning sanctuary. Experience dynamic lessons where curiosity meets innovation.
+                      </div>
+                      <a
+                        className="project_one-plus fa-solid fa-plus fa-fw"
+                        href="https://dynopat.com/" target='blank'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Project ui/ux */}
+            <div className="project_one mix design web col-lg-3 col-md-6 col-sm-12">
+              <div className="project_one-inner">
+                <div className="project_one-image">
+                  <img src="/images/projects/calyxjournal.webp" alt="" />
+                  <div className="project_one-content">
+                    <h5 className="project-one_title">
+                      <a href="https://calyxjournal.in/">Calyxjournal</a>
+                    </h5>
+                    <div className="project-one_designation">Web Development</div>
+                  </div>
+                  <div className="project_one-overlay">
+                    <div className="project-one_overlay-content">
+                      <div className="project_one-text">
+                      Unveiling Calyx Journal—a journalistic oasis I crafted. Where narratives bloom, insights flourish, and the heartbeat of stories resonates on every pixel.
+                      </div>
+                      <a
+                        className="project_one-plus fa-solid fa-plus fa-fw"
+                        href="https://calyxjournal.in/" target='blank'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="project_one mix design web col-lg-3 col-md-6 col-sm-12">
+              <div className="project_one-inner">
+                <div className="project_one-image">
+                  <img src="/images/projects/rabdinteriorstories.webp" alt="" />
+                  <div className="project_one-content">
+                    <h5 className="project-one_title">
+                      <a href="https://rabdinteriorstories.com/">Rabdinteriorstories</a>
+                    </h5>
+                    <div className="project-one_designation">Web Development</div>
+                  </div>
+                  <div className="project_one-overlay">
+                    <div className="project-one_overlay-content">
+                      <div className="project_one-text">
+                      Step into a world of elegance and innovation with our Interior Design showcase. SweetDevelopers transforms spaces, creating personalized sanctuaries that speak style and comfort
+                      </div>
+                      <a
+                        className="project_one-plus fa-solid fa-plus fa-fw"
+                        href="https://rabdinteriorstories.com/" target='blank'
                       />
                     </div>
                   </div>
@@ -124,129 +298,24 @@ const project = () => {
               </div>
             </div>
             {/* Project One */}
-            <div className="project_one mix all cloud col-lg-3 col-md-6 col-sm-12">
+            <div className="project_one mix   web  col-lg-3 col-md-6 col-sm-12">
               <div className="project_one-inner">
                 <div className="project_one-image">
-                  <img src="/images/gallery/project-2.jpg" alt="" />
+                  <img src="/images/projects/dolbin.webp" alt="" />
                   <div className="project_one-content">
                     <h5 className="project-one_title">
-                      <a href="project-detail.html">Property Simplified</a>
-                    </h5>
-                    <div className="project-one_designation">Photo Editing</div>
-                  </div>
-                  <div className="project_one-overlay">
-                    <div className="project-one_overlay-content">
-                      <div className="project_one-text">
-                        lead the team of passionate developers, designers and the
-                        strategists with a lot of thought and analysis come true!
-                      </div>
-                      <a
-                        className="project_one-plus fa-solid fa-plus fa-fw"
-                        href="project-detail.html"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Project One */}
-            <div className="project_one mix all design col-lg-3 col-md-6 col-sm-12">
-              <div className="project_one-inner">
-                <div className="project_one-image">
-                  <img src="/images/gallery/project-3.jpg" alt="" />
-                  <div className="project_one-content">
-                    <h5 className="project-one_title">
-                      <a href="project-detail.html">Deliveries Made Easy</a>
-                    </h5>
-                    <div className="project-one_designation">Food Delivery</div>
-                  </div>
-                  <div className="project_one-overlay">
-                    <div className="project-one_overlay-content">
-                      <div className="project_one-text">
-                        lead the team of passionate developers, designers and the
-                        strategists with a lot of thought and analysis come true!
-                      </div>
-                      <a
-                        className="project_one-plus fa-solid fa-plus fa-fw"
-                        href="project-detail.html"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Project One */}
-            <div className="project_one mix all cloud web col-lg-3 col-md-6 col-sm-12">
-              <div className="project_one-inner">
-                <div className="project_one-image">
-                  <img src="/images/gallery/project-4.jpg" alt="" />
-                  <div className="project_one-content">
-                    <h5 className="project-one_title">
-                      <a href="project-detail.html">Collection Management</a>
-                    </h5>
-                    <div className="project-one_designation">Web Application</div>
-                  </div>
-                  <div className="project_one-overlay">
-                    <div className="project-one_overlay-content">
-                      <div className="project_one-text">
-                        lead the team of passionate developers, designers and the
-                        strategists with a lot of thought and analysis come true!
-                      </div>
-                      <a
-                        className="project_one-plus fa-solid fa-plus fa-fw"
-                        href="project-detail.html"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Project One */}
-            <div className="project_one mix all design col-lg-3 col-md-6 col-sm-12">
-              <div className="project_one-inner">
-                <div className="project_one-image">
-                  <img src="/images/gallery/project-5.jpg" alt="" />
-                  <div className="project_one-content">
-                    <h5 className="project-one_title">
-                      <a href="project-detail.html">Improvement Company</a>
-                    </h5>
-                    <div className="project-one_designation">Web Application</div>
-                  </div>
-                  <div className="project_one-overlay">
-                    <div className="project-one_overlay-content">
-                      <div className="project_one-text">
-                        lead the team of passionate developers, designers and the
-                        strategists with a lot of thought and analysis come true!
-                      </div>
-                      <a
-                        className="project_one-plus fa-solid fa-plus fa-fw"
-                        href="project-detail.html"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Project One */}
-            <div className="project_one mix all cloud web col-lg-3 col-md-6 col-sm-12">
-              <div className="project_one-inner">
-                <div className="project_one-image">
-                  <img src="/images/gallery/project-6.jpg" alt="" />
-                  <div className="project_one-content">
-                    <h5 className="project-one_title">
-                      <a href="project-detail.html">iOS Application</a>
+                      <a href="https://ronc25.sg-host.com/" target='blan'>Dolbin</a>
                     </h5>
                     <div className="project-one_designation">Admin Dashboard</div>
                   </div>
                   <div className="project_one-overlay">
                     <div className="project-one_overlay-content">
                       <div className="project_one-text">
-                        lead the team of passionate developers, designers and the
-                        strategists with a lot of thought and analysis come true!
+                      Discover Dolbin a health care website by SweetDevelopers. Explore simple ways to stay healthy and find the care you need easily.
                       </div>
                       <a
                         className="project_one-plus fa-solid fa-plus fa-fw"
-                        href="project-detail.html"
+                        href="https://ronc25.sg-host.com/" target='blank'
                       />
                     </div>
                   </div>
@@ -254,25 +323,24 @@ const project = () => {
               </div>
             </div>
             {/* Project One */}
-            <div className="project_one mix all design col-lg-3 col-md-6 col-sm-12">
+            <div className="project_one mix  web col-lg-3 col-md-6 col-sm-12">
               <div className="project_one-inner">
                 <div className="project_one-image">
-                  <img src="/images/gallery/project-7.jpg" alt="" />
+                  <img src="/images/projects/analyticens.webp" alt="" />
                   <div className="project_one-content">
                     <h5 className="project-one_title">
-                      <a href="project-detail.html">HandyMan app</a>
+                      <a href="https://analyticens.in/" target='blank'>Analyticens</a>
                     </h5>
-                    <div className="project-one_designation">Web App</div>
+                    <div className="project-one_designation">Web Development</div>
                   </div>
                   <div className="project_one-overlay">
                     <div className="project-one_overlay-content">
                       <div className="project_one-text">
-                        lead the team of passionate developers, designers and the
-                        strategists with a lot of thought and analysis come true!
+                      Dive into the world of digital marketing with AnalyticEns. Our website, crafted by SweetDevelopers, reflects expertise, creativity, and growth strategies.
                       </div>
                       <a
                         className="project_one-plus fa-solid fa-plus fa-fw"
-                        href="project-detail.html"
+                        href="https://analyticens.in/" target='blank'
                       />
                     </div>
                   </div>
@@ -280,25 +348,72 @@ const project = () => {
               </div>
             </div>
             {/* Project One */}
-            <div className="project_one mix all cloud web col-lg-3 col-md-6 col-sm-12">
+            <div className="project_one mix  design web col-lg-3 col-md-6 col-sm-12">
               <div className="project_one-inner">
                 <div className="project_one-image">
-                  <img src="/images/gallery/project-8.jpg" alt="" />
+                  <img src="/images/projects/buydogonline.webp" alt="" />
                   <div className="project_one-content">
                     <h5 className="project-one_title">
-                      <a href="project-detail.html">Property Simplified</a>
+                      <a href="https://buydogonline.in/">Buydogonline</a>
                     </h5>
-                    <div className="project-one_designation">Photo Editing</div>
+                    <div className="project-one_designation">Web Development</div>
                   </div>
                   <div className="project_one-overlay">
                     <div className="project-one_overlay-content">
                       <div className="project_one-text">
-                        lead the team of passionate developers, designers and the
-                        strategists with a lot of thought and analysis come true!
+                      Unleash happiness at Kolkata's canine haven—your go-to for furry companions. Our online dog sale site, a creation by SweetDevelopers, connects hearts and homes.
                       </div>
                       <a
                         className="project_one-plus fa-solid fa-plus fa-fw"
-                        href="project-detail.html"
+                        href="https://buydogonline.in/" target='blank'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="project_one mix  web  col-lg-3 col-md-6 col-sm-12">
+              <div className="project_one-inner">
+                <div className="project_one-image">
+                  <img src="/images/projects/artizelifestyle.webp" alt="" />
+                  <div className="project_one-content">
+                    <h5 className="project-one_title">
+                      <a href="https://artizelifestyle.com/">Artizelifestyle</a>
+                    </h5>
+                    <div className="project-one_designation">Web Development</div>
+                  </div>
+                  <div className="project_one-overlay">
+                    <div className="project-one_overlay-content">
+                      <div className="project_one-text">
+                      Unleash creativity at Artize Lifestyle, where SweetDevelopers has seamlessly designed a hub for crafting unique and impactful business identities.
+                      </div>
+                      <a
+                        className="project_one-plus fa-solid fa-plus fa-fw"
+                        href="https://artizelifestyle.com/" target='blank'
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="project_one mix  seo  web  col-lg-3 col-md-6 col-sm-12">
+              <div className="project_one-inner">
+                <div className="project_one-image">
+                  <img src="/images/projects/dogforsalekolkata.webp" alt="" />
+                  <div className="project_one-content">
+                    <h5 className="project-one_title">
+                      <a href="https://www.dogforsalekolkata.in/">Dogforsalekolkata</a>
+                    </h5>
+                    <div className="project-one_designation">Development & SEO</div>
+                  </div>
+                  <div className="project_one-overlay">
+                    <div className="project-one_overlay-content">
+                      <div className="project_one-text">
+                      Tail-wagging happiness awaits at our canine haven. Explore our online platform for dogs, where SweetDevelopers creates connections between loving homes and furry companions in Kolkata.
+                      </div>
+                      <a
+                        className="project_one-plus fa-solid fa-plus fa-fw"
+                        href="https://www.dogforsalekolkata.in/" target='blank'
                       />
                     </div>
                   </div>
@@ -307,83 +422,71 @@ const project = () => {
             </div>
           </div>
           {/* Button Box */}
-          <div className="projects-one_button-box text-center">
+          {/* <div className="projects-one_button-box text-center">
             <a className="btn-style-one theme-btn btn-item" href="#">
               <div className="btn-wrap">
                 <span className="text-one">Load more</span>
                 <span className="text-two">Load more</span>
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
-    {/* End Projects One */}
-    {/* Clients Three */}
-    {/* <section className="clients-three">
-      <div className="auto-container">
-        <div className="clients-three_inner-container">
-          <ul className="sponsors-carousel-two owl-carousel owl-theme">
-            <li className="slide-item">
-              <figure className="client-one_image-box-two">
-                <a href="#">
-                  <img src="/images/clients/15.png" alt="" />
-                </a>
-              </figure>
-            </li>
-            <li className="slide-item">
-              <figure className="client-one_image-box-two">
-                <a href="#">
-                  <img src="/images/clients/16.png" alt="" />
-                </a>
-              </figure>
-            </li>
-            <li className="slide-item">
-              <figure className="client-one_image-box-two">
-                <a href="#">
-                  <img src="/images/clients/17.png" alt="" />
-                </a>
-              </figure>
-            </li>
-            <li className="slide-item">
-              <figure className="client-one_image-box-two">
-                <a href="#">
-                  <img src="/images/clients/18.png" alt="" />
-                </a>
-              </figure>
-            </li>
-            <li className="slide-item">
-              <figure className="client-one_image-box-two">
-                <a href="#">
-                  <img src="/images/clients/15.png" alt="" />
-                </a>
-              </figure>
-            </li>
-            <li className="slide-item">
-              <figure className="client-one_image-box-two">
-                <a href="#">
-                  <img src="/images/clients/16.png" alt="" />
-                </a>
-              </figure>
-            </li>
-            <li className="slide-item">
-              <figure className="client-one_image-box-two">
-                <a href="#">
-                  <img src="/images/clients/17.png" alt="" />
-                </a>
-              </figure>
-            </li>
-            <li className="slide-item">
-              <figure className="client-one_image-box-two">
-                <a href="#">
-                  <img src="/images/clients/18.png" alt="" />
-                </a>
-              </figure>
-            </li>
-          </ul>
-        </div>
+    <section className="clients-three">
+    <div className="auto-container">
+      <div className="clients-three_inner-container">
+        <ul className="sponsors-carousel-two owl-carousel owl-theme">
+          <li className="slide-item">
+            <figure className="client-one_image-box-two">
+              <a href="#">
+                <Image  width={60} height={60} src="/images/client/delipat.webp" alt="" />
+              </a>
+            </figure>
+          </li>
+          <li className="slide-item">
+            <figure className="client-one_image-box-two">
+              <a href="#">
+                <Image  width={60} height={60} src="/images/client/dmw.webp" alt="" />
+              </a>
+            </figure>
+          </li>
+          <li className="slide-item">
+            <figure className="client-one_image-box-two">
+              <a href="#">
+                <Image  width={60} height={60} src="/images/client/oye.webp" alt="" />
+              </a>
+            </figure>
+          </li>
+          {/* <li className="slide-item">
+            <figure className="client-one_image-box-two">
+              <a href="#">
+                <Image  width={60} height={60} src="/images/clients/18.png" alt="" />
+              </a>
+            </figure>
+          </li> */}
+          <li className="slide-item">
+            <figure className="client-one_image-box-two">
+              <a href="#">
+                <Image  width={60} height={60} src="/images/client/ana.webp" alt="" />
+              </a>
+            </figure>
+          </li>
+          <li className="slide-item">
+            <figure className="client-one_image-box-two">
+              <a href="#">
+                <img  width={60} height={60} src="/images/client/xplo.webp" alt="" />
+              </a>
+            </figure>
+          </li>
+          
+        </ul> 
       </div>
-    </section> */}
+    </div>
+  </section>
+
+
+
   
   </div>
 

@@ -1,2 +1,14 @@
+# *
 User-agent: *
-Disallow: /
+Allow: /
+
+# black-listed-bot
+User-agent: black-listed-bot
+Disallow: /healthchecker/
+
+# Host
+Host: https://sweetdevelopers.com/
+
+# Sitemaps
+Sitemap: https://sweetdevelopers.com/sitemap.xml
+

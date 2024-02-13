@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 import Packages from '../Componnt/Packages';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const service = () => {
     useEffect(() => {
@@ -47,6 +50,29 @@ const service = () => {
 
  
  <div>
+  <Head>
+        <title> Website Development & Marketing Solutions | Sweet Developer </title>
+        <meta
+          name="description"
+          content="Explore our comprehensive range of IT solutions - web development, graphic design, SEO, software and app development, and UI/UX design at Sweet Developers."
+        />
+        <meta
+          name="keywords"
+          content="Services, web development, graphic design, SEO, software development, app development, UI/UX design"
+        />
+        <meta name="author" content="Sweet Developers" />
+        
+        
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
+        <link rel="canonical" href="https://sweetdevelopers.com/service" />
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta property="og:title" content="Website Development & Marketing Solutions | Sweet Developer" />
+        <meta property="og:description" content="Explore our comprehensive range of IT solutions - web development, graphic design, SEO, software and app development, and UI/UX design at Sweet Developers." />
+        <meta property="og:url" content="https://sweetdevelopers.com/service" />
+        <meta property="og:type" content="website" />
+        {/* Other SEO-related meta tags */}
+      </Head>
     
     {/* End Page Title */}
     {/* Service Two */}
@@ -66,17 +92,17 @@ const service = () => {
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-25.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-25.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">UI/UX Design</a>
+                  <Link href="/ui-ux-design-services">UI/UX Design</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Designing immersive experiences that captivate users and drive meaningful interactions.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/ui-ux-design-services">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -85,17 +111,17 @@ const service = () => {
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-27.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-27.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">SEO &amp; Digital Marketing</a>
+                  <Link href="/seo-and-digital-marketing">SEO &amp; Digital Marketing</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Boosting brand awareness with targeted SEO and digital marketing initiatives.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/seo-and-digital-marketing#">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -104,17 +130,17 @@ const service = () => {
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-28.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-28.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">Graphics Design</a>
+                  <Link href="/graphic-design-services">Graphics Design</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Empowering businesses through visually striking graphics that convey brand essence.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/graphic-design-services">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -123,17 +149,17 @@ const service = () => {
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-26.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-26.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">Web Development</a>
+                  <Link href="/web-development-service">Web Development</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Building dynamic and responsive websites optimized for superior performance.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/web-development-service">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -142,17 +168,17 @@ const service = () => {
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-29.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-29.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">App Development</a>
+                  <Link href="/app-development-services">App Development</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Empowering businesses with dynamic app development and reliable technical support.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/app-development-services">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -161,30 +187,22 @@ const service = () => {
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-30.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-30.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">Software Development</a>
+                  <Link href="/software-development-services">Software Development</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Innovative software solutions driving business success and technological advancement effortlessly.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/software-development-services">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-        {/* Button Box */}
-        {/* <div className="services-four_button-box text-center">
-          <button onClick={handleModalOpen} className="btn-style-seven theme-btn">
-            <div className="btn-wrap">
-              <span className="text-one">get started</span>
-              <span className="text-two">get started</span>
-            </div>
-          </button>
-        </div> */}
+       
       </div>
     </div>
   </section>

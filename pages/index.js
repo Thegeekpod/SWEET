@@ -1,6 +1,8 @@
 import axios from 'axios';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+
 
 
 export default function Home() {
@@ -208,7 +210,7 @@ export default function Home() {
       <div className="slide">
         <div
           className="slider-three_image-layer"
-          style={{ backgroundImage: "url(/images/main-slider/3.jpg)" }}
+          style={{ backgroundImage: "url(/images/main-slider/2.jpg)" }}
         />
       
         <div className="auto-container">
@@ -292,20 +294,20 @@ Can Build Your Success Story
               }}
             />
             <div className="service-block_five_icon">
-              <img src="/images/icons/service-18.png" alt="" />
+              <Image width={60} height={60} src="/images/icons/service-18.png" alt="" />
             </div>
-            <h5 className="service-block_five_heading">
-              <a href="service-detail.html">Branding and UI/UX Design Services</a>
+            <h5 className="service-block_five_heading cnone">
+              <a href="#">Branding and UI/UX Design Services</a>
             </h5>
             <div className="service-block_five-text">
             We can help you create designs that stand out. 
             </div>
-            <a
+            {/* <a
               href="service-detail.html"
               className="theme-btn service-block_five-more"
             >
               Read more
-            </a>
+            </a> */}
           </div>
         </div>
         {/* Services Block Five */}
@@ -323,20 +325,20 @@ Can Build Your Success Story
               }}
             />
             <div className="service-block_five_icon">
-              <img src="/images/icons/service-19.png" alt="" />
+              <Image  width={60} height={60} src="/images/icons/service-19.png" alt="" />
             </div>
-            <h5 className="service-block_five_heading">
-              <a href="service-detail.html">Top-Notch Website Development Service</a>
+            <h5 className="service-block_five_heading cnone">
+              <a href="#">Top-Notch Website Development Service</a>
             </h5>
             <div className="service-block_five-text">
             We work on almost every web development platform.
             </div>
-            <a
+            {/* <a
               href="service-detail.html"
               className="theme-btn service-block_five-more"
             >
               Read more
-            </a>
+            </a> */}
           </div>
         </div>
         {/* Services Block Five */}
@@ -354,20 +356,20 @@ Can Build Your Success Story
               }}
             />
             <div className="service-block_five_icon">
-              <img src="/images/icons/service-20.png" alt="" />
+              <Image  width={60} height={60} src="/images/icons/service-20.png" alt="" />
             </div>
-            <h5 className="service-block_five_heading">
-              <a href="service-detail.html">Hire Dedicated Developers from Us</a>
+            <h5 className="service-block_five_heading cnone">
+              <a href="#">Hire Dedicated Developers from Us</a>
             </h5>
             <div className="service-block_five-text">
             Hire developers on hourly basis
             </div>
-            <a
+            {/* <a
               href="service-detail.html"
               className="theme-btn service-block_five-more"
             >
               Read more
-            </a>
+            </a> */}
           </div>
         </div>
         {/* Services Block Five */}
@@ -385,20 +387,20 @@ Can Build Your Success Story
               }}
             />
             <div className="service-block_five_icon">
-              <img src="/images/icons/service-21.png" alt="" />
+              <Image  width={60} height={60} src="/images/icons/service-21.png" alt="" />
             </div>
-            <h5 className="service-block_five_heading">
-              <a href="service-detail.html">Hire Digital marketing Specialist </a>
+            <h5 className="service-block_five_heading cnone">
+              <a href="#">Hire Digital marketing Specialist </a>
             </h5>
             <div className="service-block_five-text">
             We have expert SEO, SMO, and PPC experts to help you
             </div>
-            <a
+            {/* <a
               href="service-detail.html"
               className="theme-btn service-block_five-more"
             >
               Read more
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
@@ -422,17 +424,17 @@ Can Build Your Success Story
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-25.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-25.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">UI/UX Design</a>
+                  <Link href="/ui-ux-design-services">UI/UX Design</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Designing immersive experiences that captivate users and drive meaningful interactions.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/ui-ux-design-services">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -441,17 +443,17 @@ Can Build Your Success Story
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-27.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-27.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">SEO &amp; Digital Marketing</a>
+                  <Link href="/seo-and-digital-marketing">SEO &amp; Digital Marketing</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Boosting brand awareness with targeted SEO and digital marketing initiatives.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/seo-and-digital-marketing#">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -460,17 +462,17 @@ Can Build Your Success Story
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-28.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-28.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">Graphics Design</a>
+                  <Link href="/graphic-design-services">Graphics Design</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Empowering businesses through visually striking graphics that convey brand essence.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/graphic-design-services">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -479,17 +481,17 @@ Can Build Your Success Story
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-26.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-26.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">Web Development</a>
+                  <Link href="/web-development-service">Web Development</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Building dynamic and responsive websites optimized for superior performance.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/web-development-service">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -498,17 +500,17 @@ Can Build Your Success Story
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-29.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-29.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">App Development</a>
+                  <Link href="/app-development-services">App Development</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Empowering businesses with dynamic app development and reliable technical support.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/app-development-services">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -517,17 +519,17 @@ Can Build Your Success Story
             <div className="service-block_six-inner">
               <div className="service-block_six-content">
                 <span className="service-block_six-icon">
-                  <img src="/images/icons/service-30.gif" alt="" />
+                  <Image  width={60} height={60} src="/images/icons/service-30.gif" alt="" />
                 </span>
                 <h4 className="service-block_six-heading">
-                  <a href="#">Software Development</a>
+                  <Link href="/software-development-services">Software Development</Link>
                 </h4>
                 <div className="service-block_six-text">
                 Innovative software solutions driving business success and technological advancement effortlessly.
                 </div>
-                <a className="service-block_six-more theme-btn" href="#">
+                <Link className="service-block_six-more theme-btn" href="/software-development-services">
                   Discover more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -560,7 +562,7 @@ Can Build Your Success Story
         <div className="d-flex justify-content-between align-items-center flex-wrap">
           <div className="cta-two_author">
             <span className="cta-two_author-image">
-              <img src="/images/user.png" style={{width:'61px',height:'61px'}} alt="" />
+              <Image  width={60} height={60} src="/images/user.png" style={{width:'61px',height:'61px'}} alt="" />
             </span>
             Supriyo Kumar Dey
             <i>Support Person</i>
@@ -688,7 +690,7 @@ Can Build Your Success Story
             data-wow-duration="1500ms"
           >
             <div className="company-three_image">
-              <img src="/images/resource/company-1.png" alt="" />
+              <Image  width={522} height={580} src="/images/resource/company-1.png" alt="" />
             </div>
           </div>
         </div>
@@ -705,7 +707,7 @@ Can Build Your Success Story
               <div className="company-three_text">
                 <p><strong>Expertise and Experience: </strong>Look for a company with a proven track record and extensive experience in providing IT services. Check their portfolio, client testimonials, and case studies to assess their expertise in handling projects similar to yours.</p>
                 <p><strong>Comprehensive Services:  </strong>Ensure the company offers a wide range of IT services that align with your needs. Whether it's software development, infrastructure management, cybersecurity, cloud services, or IT consulting, the company should be able to provide all the services you require.</p>
-                <p><strong>Customized Solutions: </strong>Every business is unique, and so are its IT requirements. A good IT service provider should be willing to understand your specific needs and offer tailored solutions rather than one-size-fits-all approaches.</p>
+                <p><strong>Customized Solutions: </strong>Each enterprise possesses its distinct identity, reflected in its individual IT requisites. A good IT service provider should be willing to understand your specific needs and offer tailored solutions rather than one-size-fits-all approaches.</p>
                 
               </div>
             
@@ -745,7 +747,7 @@ Can Build Your Success Story
           <div className="case-block-two">
             <div className="case-block_two-inner">
               <div className="case-block_two-image">
-                <img src="/images/gallery/project-9.jpg" alt="" />
+                <Image  width={550} height={415} src="/images/gallery/project-9.jpg" alt="" />
                 <div className="case-block_two-content">
                   <div className="case-block_two-title">Web Development</div>
                   <h4 className="case-block_two-title">
@@ -759,7 +761,7 @@ Can Build Your Success Story
           <div className="case-block-two">
             <div className="case-block_two-inner">
               <div className="case-block_two-image">
-                <img src="/images/gallery/project-10.jpg" alt="" />
+                <Image   width={550} height={415}src="/images/gallery/project-10.jpg" alt="" />
                 <div className="case-block_two-content">
                   <div className="case-block_two-title">Web Development</div>
                   <h4 className="case-block_two-title">
@@ -773,7 +775,7 @@ Can Build Your Success Story
           <div className="case-block-two">
             <div className="case-block_two-inner">
               <div className="case-block_two-image">
-                <img src="/images/gallery/project-11.jpg" alt="" />
+                <Image   width={550} height={415} src="/images/gallery/project-11.jpg" alt="" />
                 <div className="case-block_two-content">
                   <div className="case-block_two-title">Web Development</div>
                   <h4 className="case-block_two-title">
@@ -808,7 +810,7 @@ Can Build Your Success Story
             data-wow-duration="1500ms"
           >
             <div className="testimonial-two_image">
-              <img src="/images/resource/testimonial-1.png" alt="" />
+              <Image width={599} height={502} src="/images/resource/testimonial-1.png" alt="" />
             </div>
           </div>
         </div>
@@ -817,7 +819,7 @@ Can Build Your Success Story
           <div className="testimonial-two_carousel-inner">
             {/* Sec Title Three */}
             <div className="sec-title_three">
-              <div className="sec-title_three-title">Testimonials</div>
+              {/* <div className="sec-title_three-title">Testimonials</div> */}
               <h2 className="sec-title_three-heading">
                 We have many good <br /> <span>client’s</span> review
               </h2>
@@ -827,10 +829,10 @@ Can Build Your Success Story
               <div className="testimonial-block_two">
                 <div className="testimonial-block_two-inner">
                   <span className="testimonial-block_two-quote">
-                    <img src="/images/icons/quote.png" alt="" />
+                    <Image  width={60} height={60} src="/images/icons/quote.png" alt="" />
                   </span>
                   <div className="testimonial-block_two-author">
-                    <img src="/images/testi/oye.png" alt="" />
+                    <Image  width={80} height={80} src="/images/testi/oye.png" alt="" />
                   </div>
                   <div className="testimonial-block_two-text">
                   I approached Sweet Developers to revamp my e-commerce website, and I couldn't be happier with the outcome. Their team's professionalism and expertise were evident from our first interaction. 
@@ -847,10 +849,10 @@ Can Build Your Success Story
               <div className="testimonial-block_two">
                 <div className="testimonial-block_two-inner">
                   <span className="testimonial-block_two-quote">
-                    <img src="/images/icons/quote.png" alt="" />
+                    <Image  width={60} height={60} src="/images/icons/quote.png" alt="" />
                   </span>
                   <div className="testimonial-block_two-author">
-                    <img src="/images/testi/dmw.png" alt="" />
+                    <Image  width={80} height={80} src="/images/testi/dmw.png" alt="" />
                   </div>
                   <div className="testimonial-block_two-text">
                   Working with Sweet Developers has been an absolute pleasure. They didn't just create a website for my startup; they crafted a digital experience. 
@@ -867,10 +869,10 @@ Can Build Your Success Story
               <div className="testimonial-block_two">
                 <div className="testimonial-block_two-inner">
                   <span className="testimonial-block_two-quote">
-                    <img src="/images/icons/quote.png" alt="" />
+                    <Image  width={60} height={60} src="/images/icons/quote.png" alt="" />
                   </span>
                   <div className="testimonial-block_two-author">
-                    <img src="/images/testi/deli.png" alt="" />
+                    <Image  width={80} height={80} src="/images/testi/deli.png" alt="" />
                   </div>
                   <div className="testimonial-block_two-text">
                   What sets them apart is their ability to blend creativity with functionality, resulting in a website that not only looks stunning but also performs exceptionally. 
@@ -898,56 +900,56 @@ Can Build Your Success Story
           <li className="slide-item">
             <figure className="client-one_image-box-two">
               <a href="#">
-                <img src="/images/clients/15.png" alt="" />
+                <Image  width={60} height={60} src="/images/clients/15.png" alt="" />
               </a>
             </figure>
           </li>
           <li className="slide-item">
             <figure className="client-one_image-box-two">
               <a href="#">
-                <img src="/images/clients/16.png" alt="" />
+                <Image  width={60} height={60} src="/images/clients/16.png" alt="" />
               </a>
             </figure>
           </li>
           <li className="slide-item">
             <figure className="client-one_image-box-two">
               <a href="#">
-                <img src="/images/clients/17.png" alt="" />
+                <Image  width={60} height={60} src="/images/clients/17.png" alt="" />
               </a>
             </figure>
           </li>
           <li className="slide-item">
             <figure className="client-one_image-box-two">
               <a href="#">
-                <img src="/images/clients/18.png" alt="" />
+                <Image  width={60} height={60} src="/images/clients/18.png" alt="" />
               </a>
             </figure>
           </li>
           <li className="slide-item">
             <figure className="client-one_image-box-two">
               <a href="#">
-                <img src="/images/clients/15.png" alt="" />
+                <Image  width={60} height={60} src="/images/clients/15.png" alt="" />
               </a>
             </figure>
           </li>
           <li className="slide-item">
             <figure className="client-one_image-box-two">
               <a href="#">
-                <img src="/images/clients/16.png" alt="" />
+                <Image  width={60} height={60} src="/images/clients/16.png" alt="" />
               </a>
             </figure>
           </li>
           <li className="slide-item">
             <figure className="client-one_image-box-two">
               <a href="#">
-                <img src="/images/clients/17.png" alt="" />
+                <Image  width={60} height={60} src="/images/clients/17.png" alt="" />
               </a>
             </figure>
           </li>
           <li className="slide-item">
             <figure className="client-one_image-box-two">
               <a href="#">
-                <img src="/images/clients/18.png" alt="" />
+                <Image  width={60} height={60} src="/images/clients/18.png" alt="" />
               </a>
             </figure>
           </li>

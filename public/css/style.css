@@ -6961,7 +6961,7 @@
 	position:relative;
 	text-align:center;
 	background-size:cover;
-	padding:280px 0px 110px;
+	padding:110px 0px 110px;
 }
 
 .page-title:before{
@@ -7336,7 +7336,7 @@
 
 .sidebar-page-container{
 	position:relative;
-	padding:110px 0px 80px;
+	padding:80px 0px 80px;
 }
 
 .sidebar-page-container .content-side,
@@ -8935,7 +8935,7 @@ ul.privicy {
 }
 .ptr{
     color: white;
-    margin: 0 16px;
+    margin: 0 10px;
     font-size: 15px;
 }
 .ptr:hover{
@@ -9013,4 +9013,9 @@ a.btn-style-one.theme-btn.btn-item.x:before {
   
   .call-button:hover .number,.whatsapp-button:hover .number {
 	display: inline; /* Show the number on hover */
+  }
+  .cnone{
+	/* user-select: none; */
+	cursor: none;
+	pointer-events: none;
   }
